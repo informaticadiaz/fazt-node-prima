@@ -6,4 +6,4 @@ extension Utiles
 
 - Prisma.
 - SQLite Viewer.
-
+- Thunder Client.

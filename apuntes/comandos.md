@@ -26,6 +26,12 @@ Ejecuta la migración
 npx prisma migrate dev
 ```
 
+Ejecuta prisma studio
+
+```bash
+npx prisma studio
+```
+
 ## Anotaciones
 
 -D para instalar como dependencia de desarrollo
