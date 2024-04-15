@@ -12,8 +12,12 @@ router.get('/products/:id', async (req, res) => {
   const productFound = await prisma.product.findFirst({
     where: {
       id: parseInt(req.params.id),
+    },
+    include: {
+      category: true
     }
   })
+
   if (!productFound) {
     return res.status(404).json({ message: 'Product not found' })
   }
